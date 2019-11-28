@@ -6,7 +6,7 @@ build:
     context: .
     docker:
       buildArgs:
-        network: host
+      network: host
   tagPolicy:
     envTemplate:
       template: '{{.DOCKER_REGISTRY}}/{{.IMAGE_NAME}}:{{.VERSION}}'
